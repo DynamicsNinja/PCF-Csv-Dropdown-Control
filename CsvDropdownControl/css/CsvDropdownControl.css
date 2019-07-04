@@ -1,0 +1,26 @@
+.Fic\.CsvDropdownControl select{
+    height: 35px;
+    width: 100%;
+    border: none;
+    font-weight: 600;
+    padding-left: 7px;
+    padding-right: 7px;
+    -webkit-appearance:none;
+}
+
+.Fic\.CsvDropdownControl select:hover,
+.Fic\.CsvDropdownControl select:focus{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    border-image: initial;
+    font-weight: 400;
+    -webkit-appearance:menulist-button;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.Fic\.CsvDropdownControl option{
+    color: black;
+    font-weight: 400;
+}
