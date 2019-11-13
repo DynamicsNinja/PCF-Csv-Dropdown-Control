@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Fic" constructor="CsvDropdownControl" version="1.0.0" display-name-key="CSV Dropdown Control" description-key="Control that allows you to define array of values that will be presented in the dropdown menu." control-type="standard">
+  <control namespace="Fic" constructor="CsvDropdownControl" version="1.0.3" display-name-key="CSV Dropdown Control" description-key="Control that allows you to define array of values that will be presented in the dropdown menu." control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="fieldValue" display-name-key="Field" description-key="Field" of-type-group="numbers" usage="bound" required="true" />
     <property name="csvValues" display-name-key="CSV Values" description-key="CSV Values" of-type="SingleLine.Text" usage="input" required="true" />

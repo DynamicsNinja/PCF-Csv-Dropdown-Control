@@ -1,2 +1,4 @@
 c:\Users\ivanf\Source\Repos\PCFCustomValuesDropdown\obj\Debug\PCFCustomValuesDropdown.pcfprojAssemblyReference.cache
 c:\Users\ivanf\Source\Repos\PCFCustomValuesDropdown\obj\Debug\PCFCustomValuesDropdown.pcfproj.CoreCompileInputs.cache
+C:\Users\ivanf\Source\Repos\PCFCsvDropdownControl\obj\Debug\PCFCustomValuesDropdown.pcfprojAssemblyReference.cache
+C:\Users\ivanf\Source\Repos\PCFCsvDropdownControl\obj\Debug\PCFCustomValuesDropdown.pcfproj.CoreCompileInputs.cache

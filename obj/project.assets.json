@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.2": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.4.3": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -11,7 +11,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.4.3": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -20,7 +20,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win-x64": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.4.3": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -29,7 +29,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win-x86": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.4.3": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -39,10 +39,10 @@
     }
   },
   "libraries": {
-    "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
-      "sha512": "m37lWB6VIJYO3QKzEGwICf8FXfwoislRlo+JtsgF0ZB154Muhu6S1nF0PO3JnmOhSmXZTiTyt7DQ9nuLUiAo1Q==",
+    "Microsoft.PowerApps.MSBuild.Pcf/0.4.3": {
+      "sha512": "w/nu1AVrY7ZsYrxaqFEVKXnNCUPJiTZ+p3DqBKx0jy10YtNTYuzdc2Nz1iiF70bgXuWGn7xo0LTcVA99gWXYsQ==",
       "type": "package",
-      "path": "microsoft.powerapps.msbuild.pcf/0.2.71",
+      "path": "microsoft.powerapps.msbuild.pcf/0.4.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -50,7 +50,7 @@
         "LICENSE.txt",
         "build/Microsoft.PowerApps.MSBuild.Pcf.props",
         "build/Microsoft.PowerApps.MSBuild.Pcf.targets",
-        "microsoft.powerapps.msbuild.pcf.0.2.71.nupkg.sha512",
+        "microsoft.powerapps.msbuild.pcf.0.4.3.nupkg.sha512",
         "microsoft.powerapps.msbuild.pcf.nuspec"
       ]
     }
@@ -66,11 +66,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ivanf\\Source\\Repos\\PCFCustomValuesDropdown\\PCFCustomValuesDropdown.pcfproj",
+      "projectUniqueName": "C:\\Users\\ivanf\\Source\\Repos\\PCFCsvDropdownControl\\PCFCustomValuesDropdown.pcfproj",
       "projectName": "PCFCustomValuesDropdown",
-      "projectPath": "c:\\Users\\ivanf\\Source\\Repos\\PCFCustomValuesDropdown\\PCFCustomValuesDropdown.pcfproj",
+      "projectPath": "C:\\Users\\ivanf\\Source\\Repos\\PCFCsvDropdownControl\\PCFCustomValuesDropdown.pcfproj",
       "packagesPath": "C:\\Users\\ivanf\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ivanf\\Source\\Repos\\PCFCustomValuesDropdown\\obj\\",
+      "outputPath": "C:\\Users\\ivanf\\Source\\Repos\\PCFCsvDropdownControl\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivanf\\AppData\\Roaming\\NuGet\\NuGet.Config",

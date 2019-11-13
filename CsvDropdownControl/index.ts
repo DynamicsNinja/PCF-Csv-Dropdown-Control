@@ -10,6 +10,7 @@ export class CsvDropdownControl implements ComponentFramework.StandardControl<II
 	private _dropdown: HTMLSelectElement;
 	private _firstOption: HTMLOptionElement;
 	private _isRequiedField: boolean;
+	private _isLockedField: boolean;
 
 	private _refreshData: EventListenerOrEventListenerObject;
 	private _changeFirstOptionText: EventListenerOrEventListenerObject;
@@ -24,12 +25,13 @@ export class CsvDropdownControl implements ComponentFramework.StandardControl<II
 		this._container = container;
 		this._context = context;
 		this._notifyOutputChanged = notifyOutputChanged;
-
+		
 		this._refreshData = this.refreshData.bind(this);
 		this._changeFirstOptionText = this.changeFirstOptionText.bind(this);
 		this._resetFirstOptionText = this.resetFirstOptionText.bind(this);
-
+		
 		this._isRequiedField = (<any>context.parameters.fieldValue).attributes.RequiredLevel == 2;
+		this._isLockedField = context.mode.isControlDisabled;
 
 		let csvValues = context.parameters.csvValues.raw;
 		let dropdown = document.createElement("select");
@@ -63,11 +65,14 @@ export class CsvDropdownControl implements ComponentFramework.StandardControl<II
 
 		this._value = context.parameters.fieldValue.raw;
 
-		if (this._value != null) { dropdown.value = this._value; }
+		if (this._value != null) { 
+			dropdown.value = this._value; 
+		}
 	}
 
 	public updateView(context: ComponentFramework.Context<IInputs>): void {
-
+		this._isLockedField = context.mode.isControlDisabled;
+		this._dropdown.disabled = this._isLockedField;
 	}
 
 	public getOutputs(): IOutputs {
