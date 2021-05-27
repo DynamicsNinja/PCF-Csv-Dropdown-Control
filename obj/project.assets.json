@@ -61,35 +61,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ivanf\\.nuget\\packages\\": {}
+    "C:\\Users\\ificko\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanf\\Source\\Repos\\PCFCsvDropdownControl\\PCFCustomValuesDropdown.pcfproj",
+      "projectUniqueName": "C:\\Users\\ificko\\source\\repos\\PCF-Csv-Dropdown-Control\\PCFCustomValuesDropdown.pcfproj",
       "projectName": "PCFCustomValuesDropdown",
-      "projectPath": "C:\\Users\\ivanf\\Source\\Repos\\PCFCsvDropdownControl\\PCFCustomValuesDropdown.pcfproj",
-      "packagesPath": "C:\\Users\\ivanf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanf\\Source\\Repos\\PCFCsvDropdownControl\\obj\\",
+      "projectPath": "C:\\Users\\ificko\\source\\repos\\PCF-Csv-Dropdown-Control\\PCFCustomValuesDropdown.pcfproj",
+      "packagesPath": "C:\\Users\\ificko\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ificko\\source\\repos\\PCF-Csv-Dropdown-Control\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ivanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ificko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net462"
       ],
       "sources": {
-        "https://www.nuget.org/api/v2/": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/iwejdH24JnBy2ZFuKGW44efx5RxNDPkq4TwIufWu6fLWU97PKM/api": {}
       },
       "frameworks": {
         "net462": {
+          "targetAlias": "net462",
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
       "net462": {
+        "targetAlias": "net462",
         "dependencies": {
           "Microsoft.PowerApps.MSBuild.Pcf": {
             "target": "Package",

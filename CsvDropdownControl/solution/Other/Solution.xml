@@ -8,12 +8,12 @@
       <LocalizedName description="Fic.CsvDropdownControl" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0</Version>
+    <Version>1.1</Version>
     <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
     <Managed>2</Managed>
     <Publisher>
       <!-- Unique Publisher Name of Cds Solution -->
-      <UniqueName>IvanFicko</UniqueName>
+      <UniqueName>ivanficko</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->
         <LocalizedName description="Ivan Ficko" languagecode="1033" />

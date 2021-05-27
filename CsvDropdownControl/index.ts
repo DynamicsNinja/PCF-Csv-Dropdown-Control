@@ -16,11 +16,6 @@ export class CsvDropdownControl implements ComponentFramework.StandardControl<II
 	private _changeFirstOptionText: EventListenerOrEventListenerObject;
 	private _resetFirstOptionText: EventListenerOrEventListenerObject;
 
-
-	constructor() {
-
-	}
-
 	public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement) {
 		this._container = container;
 		this._context = context;
@@ -33,7 +28,6 @@ export class CsvDropdownControl implements ComponentFramework.StandardControl<II
 		this._isRequiedField = (<any>context.parameters.fieldValue).attributes.RequiredLevel == 2;
 		this._isLockedField = context.mode.isControlDisabled;
 
-		let csvValues = context.parameters.csvValues.raw;
 		let dropdown = document.createElement("select");
 		dropdown.addEventListener("change", this._refreshData);
 		dropdown.addEventListener("mouseover", this._changeFirstOptionText);
@@ -43,36 +37,45 @@ export class CsvDropdownControl implements ComponentFramework.StandardControl<II
 
 		this._dropdown = dropdown;
 
-		if (!this._isRequiedField) {
-			let option = document.createElement("option");
-			option.value = "";
-			option.text = "---";
-			dropdown.appendChild(option);
-
-			this._firstOption = option;
-		}
-
-		let valuesList = csvValues.split(";");
-
-		valuesList.forEach(value => {
-			let option = document.createElement("option");
-			option.value = value;
-			option.text = value;
-			dropdown.appendChild(option);
-		});
-
 		container.appendChild(dropdown);
-
-		this._value = context.parameters.fieldValue.raw;
-
-		if (this._value != null) { 
-			dropdown.value = this._value; 
-		}
 	}
 
 	public updateView(context: ComponentFramework.Context<IInputs>): void {
-		this._isLockedField = context.mode.isControlDisabled;
-		this._dropdown.disabled = this._isLockedField;
+		try{
+			this._isLockedField = context.mode.isControlDisabled;
+			this._dropdown.disabled = this._isLockedField;
+	
+			let csvValues = context.parameters.csvValues.raw;
+			let valuesList = csvValues.split(";");
+
+			while (this._dropdown.firstChild) {
+				this._dropdown.removeChild(this._dropdown.lastChild!);
+			}
+
+			if (!this._isRequiedField) {
+				let option = document.createElement("option");
+				option.value = "";
+				option.text = "---";
+				this._dropdown.appendChild(option);
+	
+				this._firstOption = option;
+			}
+	
+			valuesList.forEach(value => {
+				let option = document.createElement("option");
+				option.value = value;
+				option.text = value;
+				this._dropdown.appendChild(option);
+			});
+	
+			this._value = context.parameters.fieldValue.raw;
+	
+			if (this._value != null) { 
+				this._dropdown.value = this._value; 
+			}
+		}catch(e){
+			console.log(e);
+		}
 	}
 
 	public getOutputs(): IOutputs {
